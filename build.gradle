@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.8.RELEASE'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.2.8.RELEASE'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.8.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-jwt', version: '1.1.1.RELEASE'
+
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.8.RELEASE'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.8.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
